@@ -99,16 +99,20 @@
                 </button>
 <div class="navbar-nav" style="gap: 10px; align-items: center;">
     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clinic Menu</a>
-    <div class="dropdown-menu bg-light m-0">
-        <a href="#" class="dropdown-item">Products (Medicines)</a>
-        <a href="#" class="dropdown-item">Suppliers</a>
-        <a href="#" class="dropdown-item">Branches</a>
-        <a href="#" class="dropdown-item">Patients</a>
-        <a href="#" class="dropdown-item">Appointments</a>
-        <a href="#" class="dropdown-item">Checkup</a>
-        <a href="#" class="dropdown-item">Pharmacy</a>
-        <a href="#" class="dropdown-item">Inventory</a>
+   <!-- Inside body of index.html -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Clinic Management Dashboard</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <a href="clinic-backend/appointments/view.php" class="btn btn-primary w-100">Appointments</a>
     </div>
+    <div class="col-md-4">
+      <a href="clinic-backend/patients/view.php" class="btn btn-success w-100">Patients</a>
+    </div>
+    <div class="col-md-4">
+      <a href="clinic-backend/medicines/view.php" class="btn btn-warning w-100">Medicines</a>
+    </div>
+  </div>
 </div>
 <a href="about.html" class="nav-item nav-link">About</a>
 <a href="service.html" class="nav-item nav-link">Services</a>
