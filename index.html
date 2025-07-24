@@ -86,20 +86,44 @@
     <!-- Brand End -->
 
 
- <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
-                <a href="index.html" class="navbar-brand d-lg-none" style="font-size: 28px; font-weight: 700;">
-                    <h1 class="text-primary m-0">My <span class="text-dark">Clinic</span></h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-<div class="navbar-nav" style="gap: 10px; align-items: center;">
-    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clinic Menu</a>
-   <!-- Inside body of index.html -->
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top bg-white shadow-sm">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-3">
+      <a href="index.html" class="navbar-brand" style="font-size: 28px; font-weight: 700;">
+        <span class="text-primary">My</span> <span class="text-dark">Clinic</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Clinic Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="clinic-backend/appointments/view.php">Appointments</a></li>
+              <li><a class="dropdown-item" href="clinic-backend/patients/view.php">Patients</a></li>
+              <li><a class="dropdown-item" href="clinic-backend/medicines/view.php">Medicines</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="d-none d-lg-flex">
+          <a class="btn btn-sm-square btn-primary ms-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square btn-primary ms-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square btn-primary ms-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square btn-primary ms-2" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Dashboard Buttons Section -->
 <div class="container mt-5">
   <h2 class="text-center mb-4">Clinic Management Dashboard</h2>
   <div class="row g-4 text-center">
@@ -114,23 +138,6 @@
     </div>
   </div>
 </div>
-<a href="about.html" class="nav-item nav-link">About</a>
-<a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-flex">
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-
     <!-- Carousel Start -->
     <div class="container-fluid header-carousel px-0 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
