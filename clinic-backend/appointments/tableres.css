@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Rows */
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #ddd;
+    
+}
+
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Hide table headers and replace with grid layout */
+    th {
+        display: none;
+    }
+
+    tbody, tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: capitalize;
+        flex: 1;
+        color: #333;
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+}
